@@ -1,0 +1,11 @@
+---
+title: "Apendice"
+lang: es
+---
+
+Elaborado por: Ingrid Hernández Antonio, David Roberto Domínguez Lozoya, Osvaldo Rodríguez Hernández.
+
+## Antecedentes:
+
+Un aerogenerador es un dispositivo que transforma la energía cinética del viento en energía eléctrica. Este dispositivo puede entenderse como una máquina y estudiar los procesos de transformación de la energía en sus distintos componentes.
+

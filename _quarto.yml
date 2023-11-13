@@ -1,0 +1,34 @@
+project:
+  type: book
+
+book:
+  title: "Titulo del libro"
+  author: "Autor"
+  date: "10/5/2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - c1.qmd
+    - c2.qmd
+    - references.qmd
+  appendices:
+    - Apendice.qmd
+  downloads: [pdf, epub]
+  cover-image: imagenes/cover.jpeg
+
+bibliography: references.bib
+
+fig-cap-location: margin
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+    mathspec: true
+  epub:
+    toc: true
+
+
+
+

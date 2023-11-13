@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Titulo del libro",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books. HOLA"
+  },
+  {
+    "objectID": "intro.html#seccion",
+    "href": "intro.html#seccion",
+    "title": "1  Titulo",
+    "section": "1.1 Seccion",
+    "text": "1.1 Seccion\nLorem ipsum dolor sit amet, nulla quis ex officia aute adipisicing nulla laborum officia aliqua eiusmod laboris enim sint sit tempor fugiat ad esse. Minim est excepteur proident fugiat non occaecat mollit occaecat duis. Labore cupidatat sunt do amet magna amet occaecat aute amet dolor deserunt nostrud eu consectetur.\nPariatur do mollit culpa cupidatat exercitation cillum fugiat aliquip occaecat laborum consectetur consequat exercitation. Et officia pariatur dolor deserunt nulla non ea fugiat pariatur id. Veniam aute culpa duis id amet magna elit. Exercitation labore esse enim ut ipsum nisi cupidatat aliqua fugiat laboris culpa cillum minim. Excepteur Lorem consectetur sunt voluptate officia est minim commodo exercitation duis culpa quis voluptate aute dolore minim eiusmod culpa consectetur.\nCillum pariatur culpa ea ut sunt amet sit commodo proident fugiat non eiusmod ipsum ut et aute in Lorem. Consectetur minim adipisicing do exercitation enim reprehenderit magna consequat sit sunt exercitation eu voluptate reprehenderit do sint duis. Lorem ipsum sunt elit ut minim dolor adipisicing officia ex sint duis tempor. Minim et ad reprehenderit nisi ad qui proident minim excepteur pariatur nostrud aliqua est occaecat occaecat. Cillum id nulla exercitation voluptate nostrud aliquip dolore sit adipisicing consequat in voluptate aute qui reprehenderit. Esse ea proident et aute officia sit ut irure labore officia amet tempor cupidatat dolore. Et aliqua proident aliquip duis cupidatat culpa duis nulla esse Lorem qui sint consectetur labore qui ullamco in est. Minim dolore id proident sunt. Laborum consectetur nisi velit sunt minim do velit eiusmod duis labore dolor enim voluptate nisi magna excepteur laboris."
+  },
+  {
+    "objectID": "c1.html#seccion",
+    "href": "c1.html#seccion",
+    "title": "2  Referencia rápida para usar este template",
+    "section": "2.1 Seccion",
+    "text": "2.1 Seccion\nEste es el sitio oficial: https://quarto.org/\nUn hipervínculo así:\nhttps://quarto.org\ncon texto así:\nQuarto"
+  },
+  {
+    "objectID": "c1.html#algunos-hints-de-markdown",
+    "href": "c1.html#algunos-hints-de-markdown",
+    "title": "2  Referencia rápida para usar este template",
+    "section": "2.2 Algunos hints de markdown",
+    "text": "2.2 Algunos hints de markdown\nAsí se inserta código no ejecutable:\na=1\nb=2\nprint (a+b)\nY esto es un código ejecutable:\n\n\nCódigo\na=1\nb=2\nprint('La suma de a+b es igual a', a+b)\n\n\nLa suma de a+b es igual a 3\n\n\nEsta es una muy buena referencia de quarto markdown:\nhttps://quarto.org/docs/authoring/markdown-basics.html\n\nAsí videos de youtube:\n\nReferencia: https://quarto.org/docs/authoring/videos.html"
+  },
+  {
+    "objectID": "c1.html#subsecccion",
+    "href": "c1.html#subsecccion",
+    "title": "2  Referencia rápida para usar este template",
+    "section": "2.3 Subsecccion",
+    "text": "2.3 Subsecccion\nEsto es una nota callout:\n\n\n\n\n\n\nPotencia: Rapidez con la cual la enegía es empleada o convertida \\(J/s=W\\)"
+  },
+  {
+    "objectID": "c1.html#subseccion-no-numerada",
+    "href": "c1.html#subseccion-no-numerada",
+    "title": "2  Referencia rápida para usar este template",
+    "section": "Subseccion no-numerada",
+    "text": "Subseccion no-numerada\nAsí entra la numeración\n\nUno\nDos\nTres\n\nAsí bullets:\n\nUno\nDos\nTres\n\nScript\nBold\nScript-Bold"
+  },
+  {
+    "objectID": "c1.html#así-se-inserta-un-programa-que-tiene-una-gráfica-como-output-python.",
+    "href": "c1.html#así-se-inserta-un-programa-que-tiene-una-gráfica-como-output-python.",
+    "title": "2  Referencia rápida para usar este template",
+    "section": "2.4 Así se inserta un programa que tiene una gráfica como output (Python).",
+    "text": "2.4 Así se inserta un programa que tiene una gráfica como output (Python).\nEste es texto previo\n\n\nCódigo\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nVelocidades = np.arange(0,20,0.1)\nPotencia=.5*1.2*Velocidades**3\n\nplt.plot(Velocidades,Potencia, label=r'$\\frac{P}{A}= \\frac{1}{2} \\rho V^3$')\nplt.xlabel('Velocidades [$m/s$]')\nplt.ylabel('Densidad de potencia [$W/m^2$]')\nplt.legend()\nplt.show()\n\n\n\n\n\nFigura 2.1: Relación de la velocidad de viento y densidad de potencia.\n\n\n\n\nLas ecuaciones con latex pueden ir en la misma linea con $x^2$ para tener una salida \\(x^2\\). Una ecuación numerada es con por lo que el input es este:\n$$\n\\begin{split}\nV(z) &= \\frac{\\ln \\left( \\frac{z}{z_0}  \\right) }{ \\ln \\left( \\frac{z_r}{z_0} \\right) } V(z_r) \\\\\n    &= \\frac{\\ln \\left( \\frac{40}{0.1}  \\right) }{ \\ln \\left( \\frac{10}{0.1} \\right) } 5 = 6.51 \\text{m/s}\n\\end{split}\n$${#eq-etiqueta}\nPara obtener una salida así:\n\\[\n\\begin{split}\nV(z) &= \\frac{\\ln \\left( \\frac{z}{z_0}  \\right) }{ \\ln \\left( \\frac{z_r}{z_0} \\right) } V(z_r) \\\\\n    &= \\frac{\\ln \\left( \\frac{40}{0.1}  \\right) }{ \\ln \\left( \\frac{10}{0.1} \\right) } 5 = 6.51 \\text{m/s}\n\\end{split}\n\\tag{2.1}\\]\nAsí se cita Ecuación 2.1"
+  },
+  {
+    "objectID": "c1.html#esto-es-una-tabla",
+    "href": "c1.html#esto-es-una-tabla",
+    "title": "2  Referencia rápida para usar este template",
+    "section": "2.5 Esto es una tabla",
+    "text": "2.5 Esto es una tabla\n\n\n\nTiempo\nVelocidad [m/s]\n\n\n\n\n10\n1\n\n\n20\n4\n\n\n30\n17\n\n\n40\n18\n\n\n50\n26\n\n\n60\n6"
+  },
+  {
+    "objectID": "c1.html#así-se-inserta-una-imagen",
+    "href": "c1.html#así-se-inserta-una-imagen",
+    "title": "2  Referencia rápida para usar este template",
+    "section": "2.6 Así se inserta una imagen",
+    "text": "2.6 Así se inserta una imagen\nAsi se cita una figura Figura 2.2:\n\n\n\nFigura 2.2: Diagrama del flujo de efectivo"
+  },
+  {
+    "objectID": "c1.html#cita-bibtex",
+    "href": "c1.html#cita-bibtex",
+    "title": "2  Referencia rápida para usar este template",
+    "section": "2.7 Cita bibtex",
+    "text": "2.7 Cita bibtex\nEste es una ejemplo de cita: Knuth (1984)\nY se inserta en la sección References"
+  },
+  {
+    "objectID": "c1.html#esto-es-una-nota-al-pie-de-página",
+    "href": "c1.html#esto-es-una-nota-al-pie-de-página",
+    "title": "2  Referencia rápida para usar este template",
+    "section": "2.8 Esto es una nota al pie de página",
+    "text": "2.8 Esto es una nota al pie de página\nAqui in ejemplo de nota al pie de página corta 1 y este es un ejemplo de una nota al pie de página larga 2.\n\n\n\n\nKnuth, Donald E. 1984. «Literate Programming». Comput. J. 27 (2): 97-111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "c1.html#footnotes",
+    "href": "c1.html#footnotes",
+    "title": "2  Referencia rápida para usar este template",
+    "section": "",
+    "text": "Esto es una nota al pie de página.↩︎\nNota larga, la indentación define el contenido de la nota Esto es de la misma nota:\n1+1\nSigue indentado y se incluye en la nota↩︎"
+  },
+  {
+    "objectID": "c2.html",
+    "href": "c2.html",
+    "title": "3  Capitulo 2",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, adipisicing deserunt occaecat officia anim anim ipsum quis aliquip excepteur esse non. Incididunt et occaecat excepteur veniam reprehenderit do cillum ex dolor officia incididunt dolore enim exercitation quis cillum est. Incididunt Lorem velit eu deserunt est dolor veniam reprehenderit eiusmod eiusmod irure adipisicing eu culpa labore fugiat quis dolor. Cupidatat voluptate veniam enim. Ea exercitation consectetur fugiat fugiat officia aute. Pariatur consectetur amet cupidatat in incididunt elit reprehenderit consequat id laboris fugiat esse fugiat do minim cupidatat esse elit minim. Sit proident commodo consequat laboris ut deserunt pariatur. Voluptate eiusmod aliquip nulla sunt eiusmod officia qui non incididunt non qui laborum ipsum.\nIncididunt quis sint anim incididunt ad sunt nulla officia enim mollit ad. Id consectetur deserunt aliqua occaecat minim excepteur Lorem aute ullamco aliqua id voluptate qui nisi incididunt sit. Dolore ut eu eu adipisicing cupidatat ex enim consectetur voluptate deserunt officia et veniam dolore consectetur fugiat aute laborum. Labore veniam sit non non eiusmod velit enim nostrud nulla in Lorem officia et. Aliquip culpa proident ut aute officia mollit dolor sint. Laboris commodo velit consequat consectetur elit sint deserunt minim dolore non id cupidatat pariatur. Ullamco magna id cillum consectetur tempor in incididunt mollit irure fugiat minim nisi elit sit incididunt.\nEsse incididunt anim esse minim proident occaecat tempor amet. Aute quis in excepteur et quis adipisicing nostrud eiusmod minim. Adipisicing sint do in mollit sint. Incididunt eiusmod cupidatat reprehenderit Lorem est ex aliqua aliquip occaecat ullamco deserunt laborum deserunt enim elit cillum ipsum. Sunt cupidatat eu fugiat occaecat anim irure fugiat nostrud sint ad."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "Apendice.html#antecedentes",
+    "href": "Apendice.html#antecedentes",
+    "title": "Apéndice A — Apendice",
+    "section": "A.1 Antecedentes:",
+    "text": "A.1 Antecedentes:\nUn aerogenerador es un dispositivo que transforma la energía cinética del viento en energía eléctrica. Este dispositivo puede entenderse como una máquina y estudiar los procesos de transformación de la energía en sus distintos componentes."
+  }
+]

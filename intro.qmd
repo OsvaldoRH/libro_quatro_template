@@ -1,0 +1,25 @@
+---
+title: "Titulo"
+
+lang: es
+        
+format:
+    html:
+        code-fold: true
+        fig-width: 6
+        fig-height: 4
+    pdf:
+        fig-width: 7
+        fig-height: 5
+        header-includes:
+        - \usepackage{amsthm}
+
+bibliography: references.bib
+---
+
+## Seccion
+Lorem ipsum dolor sit amet, nulla quis ex officia aute adipisicing nulla laborum officia aliqua eiusmod laboris enim sint sit tempor fugiat ad esse. Minim est excepteur proident fugiat non occaecat mollit occaecat duis. Labore cupidatat sunt do amet magna amet occaecat aute amet dolor deserunt nostrud eu consectetur.
+
+Pariatur do mollit culpa cupidatat exercitation cillum fugiat aliquip occaecat laborum consectetur consequat exercitation. Et officia pariatur dolor deserunt nulla non ea fugiat pariatur id. Veniam aute culpa duis id amet magna elit. Exercitation labore esse enim ut ipsum nisi cupidatat aliqua fugiat laboris culpa cillum minim. Excepteur Lorem consectetur sunt voluptate officia est minim commodo exercitation duis culpa quis voluptate aute dolore minim eiusmod culpa consectetur.
+
+Cillum pariatur culpa ea ut sunt amet sit commodo proident fugiat non eiusmod ipsum ut et aute in Lorem. Consectetur minim adipisicing do exercitation enim reprehenderit magna consequat sit sunt exercitation eu voluptate reprehenderit do sint duis. Lorem ipsum sunt elit ut minim dolor adipisicing officia ex sint duis tempor. Minim et ad reprehenderit nisi ad qui proident minim excepteur pariatur nostrud aliqua est occaecat occaecat. Cillum id nulla exercitation voluptate nostrud aliquip dolore sit adipisicing consequat in voluptate aute qui reprehenderit. Esse ea proident et aute officia sit ut irure labore officia amet tempor cupidatat dolore. Et aliqua proident aliquip duis cupidatat culpa duis nulla esse Lorem qui sint consectetur labore qui ullamco in est. Minim dolore id proident sunt. Laborum consectetur nisi velit sunt minim do velit eiusmod duis labore dolor enim voluptate nisi magna excepteur laboris.

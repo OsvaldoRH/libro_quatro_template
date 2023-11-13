@@ -1,0 +1,175 @@
+---
+title: "Referencia rápida para usar este template"
+
+lang: es
+        
+format:
+    html:
+        code-fold: true
+        fig-width: 6
+        fig-height: 4
+    pdf:
+        fig-width: 7
+        fig-height: 5
+        header-includes:
+        - \usepackage{amsthm}
+
+bibliography: references.bib
+---
+
+## Seccion
+
+Este es el sitio oficial:
+https://quarto.org/
+
+Un hipervínculo así:
+
+<https://quarto.org>
+
+con texto así:
+
+[Quarto](https://quarto.org)
+
+## Algunos hints de markdown 
+
+Así se inserta código no ejecutable:
+
+```python
+a=1
+b=2
+print (a+b)
+```
+
+Y esto es un código ejecutable:
+
+```{python}
+a=1
+b=2
+print('La suma de a+b es igual a', a+b)
+```
+
+
+Esta es una muy buena referencia de quarto markdown:
+
+<https://quarto.org/docs/authoring/markdown-basics.html>
+
+
+
+- Así videos de youtube:
+
+Referencia: <https://quarto.org/docs/authoring/videos.html>
+
+{{< video https://www.youtube.com/embed/wo9vZccmqwc
+    title="What is the CERN?"
+    start="116"
+    aspect-ratio="21x9" 
+>}}
+
+
+## Subsecccion
+
+Esto es una nota callout:
+
+:::{.callout-note appearance="simple"}
+**Potencia**: Rapidez con la cual la enegía es empleada o convertida $J/s=W$
+::: 
+
+## Subseccion no-numerada {.unnumbered}
+
+Así entra la numeración
+
+1. Uno
+2. Dos
+3. Tres
+
+Así bullets:
+
+- Uno
+- Dos
+- Tres
+
+*Script*
+
+**Bold**
+
+***Script-Bold***
+
+## Así se inserta un programa que tiene una gráfica como output (Python).
+Este es texto previo
+
+```{python}
+#| label: fig-DenPot
+#| fig-cap: "Relación de la velocidad de viento y densidad de potencia."
+#| fig-width: 
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+Velocidades = np.arange(0,20,0.1)
+Potencia=.5*1.2*Velocidades**3
+
+plt.plot(Velocidades,Potencia, label=r'$\frac{P}{A}= \frac{1}{2} \rho V^3$')
+plt.xlabel('Velocidades [$m/s$]')
+plt.ylabel('Densidad de potencia [$W/m^2$]')
+plt.legend()
+plt.show()
+```
+
+Las ecuaciones con latex pueden ir en la misma linea con ```$x^2$``` para tener una salida $x^2$.
+Una ecuación numerada es con \LaTeX por lo que el input es este: 
+
+```
+$$
+\begin{split}
+V(z) &= \frac{\ln \left( \frac{z}{z_0}  \right) }{ \ln \left( \frac{z_r}{z_0} \right) } V(z_r) \\
+    &= \frac{\ln \left( \frac{40}{0.1}  \right) }{ \ln \left( \frac{10}{0.1} \right) } 5 = 6.51 \text{m/s}
+\end{split}
+$${#eq-etiqueta}
+````
+
+Para obtener una salida así:
+
+$$
+\begin{split}
+V(z) &= \frac{\ln \left( \frac{z}{z_0}  \right) }{ \ln \left( \frac{z_r}{z_0} \right) } V(z_r) \\
+    &= \frac{\ln \left( \frac{40}{0.1}  \right) }{ \ln \left( \frac{10}{0.1} \right) } 5 = 6.51 \text{m/s}
+\end{split}
+$${#eq-etiqueta}
+
+Así se cita @eq-etiqueta
+
+## Esto es una tabla
+
+| Tiempo | Velocidad [m/s]|
+:--------:|:--------------:|
+| 10      |  1   |
+| 20  |  4   |
+| 30  |  17   |
+| 40  |  18   |
+| 50  |  26   |
+| 60  |  6   |
+
+## Así se inserta una imagen
+
+Asi se cita una figura @fig-img:
+
+![Diagrama del flujo de efectivo](/imagenes/cover.jpeg){#fig-img width=70%}
+
+## Cita bibtex
+
+Este es una ejemplo de cita: @knuth84
+
+Y se inserta en la sección *References*
+
+## Esto es una nota al pie de página
+
+Aqui in ejemplo de nota al pie de página corta [^1] y este es  un ejemplo de una nota al pie de página larga [^NotaLarga].
+
+[^1]: Esto es una nota al pie de página.
+
+[^NotaLarga]: Nota larga, la indentación define el contenido de la nota
+    Esto es de la misma nota:
+    ```python
+    1+1
+    ```
+    Sigue indentado y se incluye en la nota
